@@ -6,7 +6,7 @@
 /*   By: lfchouch <lfchouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 05:46:44 by lfchouch          #+#    #+#             */
-/*   Updated: 2022/01/14 15:03:29 by lfchouch         ###   ########.fr       */
+/*   Updated: 2022/01/17 13:48:57 by lfchouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*xpm_file(t_game *game, char *index)
 			&game->img_struct.width, &game->img_struct.height);
 	if (!image)
 	{
-		printf("valid xpm files needed\n");
+		ft_putstr_fd("Error\nValid xpm files needed\n", 2);
 		exit(0);
 	}
 	return (image);

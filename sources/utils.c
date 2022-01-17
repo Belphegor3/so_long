@@ -6,7 +6,7 @@
 /*   By: lfchouch <lfchouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 20:40:19 by lfchouch          #+#    #+#             */
-/*   Updated: 2022/01/13 06:55:30 by lfchouch         ###   ########.fr       */
+/*   Updated: 2022/01/17 18:51:35 by lfchouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,9 @@ char	*ft_strchr(char *s, int c)
 		str++;
 	}
 	return ((char *)str);
+}
+
+void	ft_putstr_fd(char *string, int fd)
+{
+	write(fd, string, ft_strlen(string, 0));
 }

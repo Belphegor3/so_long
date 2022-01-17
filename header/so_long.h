@@ -6,7 +6,7 @@
 /*   By: lfchouch <lfchouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 03:07:57 by lfchouch          #+#    #+#             */
-/*   Updated: 2022/01/14 15:01:24 by lfchouch         ###   ########.fr       */
+/*   Updated: 2022/01/17 14:11:15 by lfchouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@
 # include <X11/keysym.h>
 # include "get_next_line.h"
 # include "../minilibx-linux/mlx.h"
-//# define X_EVENT_KEY_PRESS		2
-//# define X_EVENT_KEY_EXIT		17
-//# define X_EVENT_CLIENT_MESSAGE	33
 # define KEY_ESC				65307
 # define KEY_W					119		
 # define KEY_A					97
@@ -107,6 +104,7 @@ int		game_close(t_game *game);
 int		ft_strlen(char *str, int n);
 char	*ft_strdup(const char *src);
 char	*ft_strchr(char *s, int c);
+void	ft_putstr_fd(char *string, int fd);
 
 int		deal_key(int keycode, t_game *game);
 

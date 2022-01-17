@@ -6,7 +6,7 @@
 #    By: lfchouch <lfchouch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/26 02:06:32 by ccouliba          #+#    #+#              #
-#    Updated: 2022/01/14 15:07:11 by lfchouch         ###   ########.fr        #
+#    Updated: 2022/01/17 14:05:52 by lfchouch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ CC			=	clang -MMD -MP
 
 RM			=	rm -rf
 
-CFLAGS		=	-Wall -Wextra -Werror #-g3 -fsanitize=address
+CFLAGS		=	-Wall -Wextra -Werror -g3 -fsanitize=address
 
 MLX_DIR		=	minilibx-linux
 
