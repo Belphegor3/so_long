@@ -16,6 +16,7 @@ Il suffit d executer la commande `make` puis de renseigner une map a utiliser en
 Le nom de l executable est **so_long**.  
 Exemple d utilisation:  
 ```bash
+make
 ./so_long maps/subject.ber
 ```
 
@@ -28,11 +29,11 @@ On ne peut sortir que si on a ramasse tous les collectibles.
 
 ## Fonctionnement
 
-[Sommaire](#sommaire)
-[Map valide](#map-valide)
-[Affichage](#affichage-du-jeu)
-[Deplacement](#deplacement)
-[Defaut](#defaut)
+- [Sommaire](#sommaire)
+- [Map valide](#map-valide)
+- [Affichage](#affichage-du-jeu)
+- [Deplacement](#deplacement)
+- [Defaut](#defaut)
 
 ### Map valide
 
@@ -57,11 +58,10 @@ En effet, si on se deplace sur un **C**, on le collecte et donc il disparait. Si
 ### Defaut
 
 Avec une tres grande map, comme on affiche entierement la map qu on change a chaque deplacement, le jeu sera tres lent voir injouable. Pour palier a ce defaut majeur il aurait suffit de reafficher uniquement les 4 cases autour du **P** sur la map avec la case du **P** aussi evidemment.  
-Encore mieux, il aurait fallut stocker les donnees de chaque images pour ne pas avoir a les creer/supprimer a chaque fois qu on veut afficher un caractere.
+Encore mieux, il aurait fallut stocker les donnees de chaque images pour ne pas avoir a les creer/supprimer a chaque fois qu on veut afficher un caractere.  
 
 ## Definitions
 
-[SOmmaire](#sommaire)
-
-[^1]: **minilibx** : La minilibx est une bibliothèque graphique simple, faites pour les projets 42 pour travailler avec les fenêtres, les images et les événements. On peut y retrouver toutes les infos sur [42docs](https://harm-smits.github.io/42docs/libs/minilibx).
+[^1]: **minilibx** : La minilibx est une bibliothèque graphique simple, faites pour les projets 42 pour travailler avec les fenêtres, les images et les événements. On peut y retrouver toutes les infos sur [42docs](https://harm-smits.github.io/42docs/libs/minilibx).  
+  
 [^2]: **parsing** : Designe l analyse, la verification et la preparation du code source a etre interprete/compile. 
